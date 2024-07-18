@@ -1,0 +1,92 @@
+/* Container for the autocomplete component */
+.autocomplete {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styling the input field */
+  .autocomplete input {
+    background-color: #bfdbfe;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #a1a1aa;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    height: 2.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .autocomplete input:hover {
+    background-color: #93c5fd;
+  }
+  
+  /* Styling the suggestions container */
+  .react-autosuggest__suggestions-container {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    border: 1px solid #a1a1aa;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    width: 20%; /* Adjust width as needed */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Display the suggestions container when it has suggestions */
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+  }
+  
+  /* Styling the suggestions list */
+  .react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styling each suggestion item */
+  .react-autosuggest__suggestion {
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 100%; /* Adjust width as needed */
+  }
+  
+  .react-autosuggest__suggestion:hover {
+    background-color: #e5e7eb;
+  }
+  
+  /* Styling the highlighted suggestion item */
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #93c5fd;
+  }
+  
+  /* Additional container styles for the suggestions */
+  .suggestions-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .suggestions-list .p-2 {
+    padding: 0.5rem;
+  }
+  
+  .suggestions-list .hover\\:bg-gray-200:hover {
+    background-color: #e5e7eb;
+  }
+  
+  /* Styling the suggestion title */
+  .suggestion-title {
+    display: block;
+  }
+  
